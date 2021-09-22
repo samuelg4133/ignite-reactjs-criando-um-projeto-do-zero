@@ -14,6 +14,7 @@ import { getPrismicClient } from '../../services/prismic';
 import styles from './post.module.scss';
 import commonStyles from '../../styles/common.module.scss';
 import { Header } from '../../components/Header';
+import { Comments } from '../../components/Comments';
 
 interface Post {
   first_publication_date: string | null;
@@ -172,6 +173,7 @@ export default function Post({
               )}
             </div>
           </footer>
+          <Comments />
           {preview && (
             <aside className={commonStyles.exitPreviewButton}>
               <Link href="/api/exit-preview">
