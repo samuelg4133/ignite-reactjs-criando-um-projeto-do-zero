@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import styles from './styles.module.scss';
 
-export function Header(): JSX.Element {
+export default function Header(): JSX.Element {
   return (
     <header className={styles.header}>
       <Link href="/">
